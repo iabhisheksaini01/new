@@ -1,26 +1,31 @@
+![go](https://github.com/user-attachments/assets/302c1f38-bfec-4110-9d46-6b0f1007a125)
 # Golang Installation and Version Management Script
-
 ## Author Information
 
 | Created by      | Created on         | Version          | Last updated On   | pre Reviewer       | L0 Reviewer     | L1 Reviewer          |    L2 Reviewer    |
 |-----------------|--------------------|------------------|-------------------|--------------------|-----------------|----------------------|-------------------|
-| Abhishek saini  |  16-07-2025        | V 1.0            |     18-07-2025    |  Prashant          |  Priyanka      |      Rishabh sharma   |   piyush upadhyay |
-
----
-![go](https://github.com/user-attachments/assets/302c1f38-bfec-4110-9d46-6b0f1007a125)
-
-This Bash script provides an interactive utility to install or upgrade **Go (Golang)** on Ubuntu-based systems. It supports multiple methods including installation via package manager or downloading from the official tarball, and allows managing different Go versions effectively.
+| Abhishek saini  |  16-07-2025        | V 1.0            |     18-07-2025    |  Prashant          |  -      |     -   |   - |
 
 ---
 
+
+---
 ## Table of Contents
-
+- [Objective](#objective)
 - [Prerequisites](#prerequisites)  
 - [Features](#features)  
 - [Supported Versions](#supported-versions)  
 - [Installation Methods](#installation-methods)  
-- [How It Works](#how-it-works)  
-- [Usage](#usage)  
+- [How It Works](#how-it-works)
+- [Usage](#usage)
+- [Bash Script](#bash-script)
+- [conclusion](#conclusion)  
+
+---
+
+## Objective
+
+To provide a simple script for installing and managing multiple Go (Golang) versions on Ubuntu. It supports APT and tarball methods, and allows easy switching between versions using `update-alternatives`.
 
 ---
 
@@ -45,9 +50,7 @@ This Bash script provides an interactive utility to install or upgrade **Go (Gol
 
 Currently the script supports:
 
-- Go 1.20.7  
-- Go 1.21.0  
-- Go 1.22.0
+- Go 1.20.7 +
 
 You can add more versions by updating the script.
 
@@ -163,6 +166,12 @@ sudo update-alternatives --display go
 echo
 echo "Current default Go version: $(go version)"
 ```
+---
+
+## Conclusion
+
+This script simplifies the process of installing and managing multiple Go (Golang) versions on Ubuntu systems. It provides users with the flexibility to choose installation methods—either through the system package manager or by downloading official tarballs. Additionally, it leverages `update-alternatives` to manage and switch between multiple Go versions efficiently. This approach ensures that developers can easily work with different Go versions depending on project needs without interfering with system-wide configurations.
+
 ---
 
 ## Contact Information
